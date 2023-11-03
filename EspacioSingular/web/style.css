@@ -1,0 +1,489 @@
+@charset "UTF-8";
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 jun 2023, 18:19:18
+    Author     : USER
+*/
+/*Ajustes Generales*/
+body {
+  background-color: white;
+  font-family: "Mukta", sans-serif;
+}
+
+.error {
+  color: red;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: solid 2px green;
+  padding: 0.5em;
+}
+
+.Correcto {
+  color: green;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: solid 2px red;
+  padding: 0.5em;
+}
+
+#bodyBlack {
+  background-color: black;
+  font-family: "Mukta", sans-serif;
+}
+#bodyBlack button {
+  background-color: black;
+  color: white;
+}
+#bodyBlack h3 {
+  color: black;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Phudu", cursive;
+}
+
+/*Fin Ajustes Generales*/
+/*--------------------------------------------------------------*/
+/*Archivo Index*/
+/*Enlace a Insta*/
+#Insta {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 3em;
+  padding-top: 0.5em;
+  font-family: "Phudu", cursive;
+}
+#Insta a {
+  text-decoration: none;
+  color: rgb(190, 63, 63);
+}
+
+/*Fin de Enlace a Insta*/
+/*Navbar*/
+.navbar-toggler {
+  background-color: rgb(158, 158, 158);
+  color: white;
+}
+
+.linkDelNav {
+  color: black;
+  border-left: 2px solid black;
+}
+
+/*Fin del Navbar*/
+/*Comienzo Titulo Principal*/
+#titulo {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 1em;
+}
+#titulo .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#titulo img {
+  width: 100%;
+}
+
+/*Final Titulo Principal*/
+/*Menú de botones*/
+#Menu img {
+  margin-left: 37%;
+}
+
+.botonesMenu {
+  width: 20em;
+  background-color: black;
+  color: white;
+}
+
+#izquierda {
+  float: left;
+  width: 25em;
+  margin-left: 13%;
+}
+#izquierda .botonesMenu {
+  display: block;
+  margin-top: 2em;
+}
+
+#derecha {
+  float: left;
+  width: 25em;
+  margin-left: 20%;
+}
+#derecha .botonesMenu {
+  display: block;
+  margin-top: 2em;
+}
+
+/*Fin de Menú de botones*/
+/*Sedes*/
+#Sedes {
+  margin-top: 5em;
+  padding-bottom: 2em;
+}
+
+#Direccion1 {
+  margin-top: 4em;
+  float: left;
+  width: 48em;
+}
+#Direccion1 iframe {
+  border: 3px solid black;
+}
+#Direccion1 h4 {
+  color: black;
+}
+
+#Direccion2 {
+  margin-top: 4.5em;
+}
+#Direccion2 iframe {
+  border: 3px solid black;
+}
+#Direccion2 h4 {
+  color: black;
+}
+
+/*Fin de Sedes*/
+#ColumnaIZQ {
+  float: left;
+  width: 40em;
+}
+
+/*Fin Archivo Index*/
+/*--------------------------------------------------------------*/
+/*Footer Común a todas las páginas*/
+#footer2 {
+  background-color: black;
+  color: white;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  padding: 1em;
+  font-family: "Phudu", cursive;
+  text-align: center;
+}
+#footer2 .iEnlace {
+  font-size: 3em;
+  margin-right: 1em;
+  color: white;
+}
+
+/*Fin Footer Común a todas las páginas*/
+/*--------------------------------------------------------------*/
+/*Inicio Archivo Login*/
+.header h3 {
+  text-align: center;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+.accede {
+  width: 30em;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: white;
+  margin-top: 5em;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#Blogin {
+  background-color: lightgrey;
+}
+
+.botonLogin {
+  background-color: black;
+  color: white;
+}
+
+.body {
+  padding: 2em;
+}
+
+#BotonRegistrate {
+  background-color: black;
+  color: white;
+}
+
+/*Fin Archivo Login*/
+/*--------------------------------------------------------------*/
+/*Inicio Archivo Tienda*/
+#STOCK {
+  color: red;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.DivProducto {
+  border-top: 1px solid black;
+  display: grid;
+  padding-bottom: 2em;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.DivProducto .ImgProducto {
+  border-right: 1px solid black;
+}
+.DivProducto .ImgProducto img {
+  width: 250px;
+  height: 200px;
+}
+.DivProducto .CuerpoProducto {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.DivProducto .DerechaProducto form {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+#producto {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+#producto .DivProducto:last-child {
+  border-bottom: 1px solid black;
+}
+
+/*
+    margin: {
+        top: 5%;
+        left: 10%;
+    }
+    div{
+        margin-bottom: 2em;
+        border-radius: 15px;
+        input{
+            width: 3.5em;
+            border: 2px solid grey;
+            margin-bottom: 0.5em;
+        }
+        button{
+            background-color: black;
+            color: white;
+        }
+    }
+    .card{
+        border: solid 3px black;
+
+    }
+}*/
+#BotonComprar button {
+  background-color: black;
+  color: white;
+}
+
+/*Cabecera Tienda*/
+#headerProductos {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#headerProductos h2 {
+  font-size: 100px;
+}
+
+/*Fin Cabecera Tienda*/
+#terminar {
+  text-align: center;
+}
+#terminar button {
+  width: 40em;
+  height: 4em;
+  margin-bottom: 2em;
+  background-color: black;
+  color: white;
+}
+
+/*Fin Archivo Tienda*/
+/*--------------------------------------------------------------*/
+/*Inicio Archivo Editar Perfil*/
+#EditarP {
+  margin-top: 5em;
+}
+
+#formularioEditar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#headerPerfil {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#headerPerfil h2 {
+  font-size: 50px;
+  padding: 0.5em;
+}
+
+#BodyPerfil hr {
+  height: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  color: black;
+}
+
+#formulario {
+  padding: 2em;
+  border-radius: 10px;
+  width: 55%;
+  margin-top: 3em;
+  margin-left: 25%;
+}
+
+#Contraseña {
+  padding: 2em;
+  border-radius: 10px;
+  width: 40%;
+  margin-top: 2.5em;
+  margin-left: 20%;
+}
+
+#botonEdit {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-top: 20%;
+  margin-left: 40%;
+}
+
+#Contraseña h3 {
+  color: black;
+}
+
+/*Fin Archivo Editar Perfil*/
+/*--------------------------------------------------------------*/
+/*inicio Archivo Personal*/
+#headerPersonal {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#headerPersonal h2 {
+  font-size: 100px;
+}
+
+.personal {
+  margin-top: 2em;
+  padding-top: 2em;
+}
+.personal hr {
+  height: 10px;
+}
+.personal div.row {
+  border-top: 2px solid grey;
+  padding-top: 2em;
+}
+.personal div.row h4 {
+  display: inline;
+}
+.personal div.row img {
+  width: 200px;
+  height: 250px;
+  margin-bottom: 2em;
+}
+.personal div.row ::first-child {
+  border-top: 0px solid grey;
+}
+.personal i {
+  font-size: 30px;
+}
+
+/*Fin Archivo Personal*/
+/*--------------------------------------------------------------*/
+/*Inicio Archivo Servicios*/
+#headerServicios {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#headerServicios h2 {
+  font-size: 100px;
+}
+
+#Servicios {
+  float: left;
+  width: 80%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-left: 2px solid grey;
+  padding-left: 2%;
+}
+#Servicios p {
+  border-bottom: 2px solid grey;
+}
+
+#navbar-example3 {
+  float: left;
+}
+#navbar-example3 nav a {
+  color: black;
+}
+
+/*Fin Archivo Servicios*/
+/*--------------------------------------------------------------*/
+/*Inicio Archivo Administración*/
+#Administrar {
+  margin-top: 3%;
+}
+#Administrar .list-group div a {
+  color: purple;
+  text-decoration: none;
+}
+#Administrar form {
+  border-top: 2px solid grey;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+#bodyAdmin {
+  background-color: rgb(156, 156, 156);
+}
+
+/*Fin Archivo Administración*/
+/*--------------------------------------------------------------*/
+/*Inicio Archivo pedidos*/
+#headerPedidos {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#detallesPedido {
+  float: left;
+  width: 80%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-left: 2px solid grey;
+  padding-left: 2%;
+}
+
+#productos {
+  display: inline;
+  margin-left: 2em;
+}
+
+@media (max-width: 700px) {
+  #producto {
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #izquierda {
+    margin-left: 10%;
+  }
+  #derecha {
+    margin-left: 10%;
+  }
+}/*# sourceMappingURL=style.css.map */
